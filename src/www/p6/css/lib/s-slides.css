@@ -1,0 +1,37 @@
+body > .slide {margin-top: 75px;}
+
+.slide {background: transparent url(/p6/img/bg_canvas.png) repeat-x 0px 37px; width: 984px; float: left; padding: 0 20px 108px;}
+
+.slide h1 {font-size: 30px; padding: 0; margin: 0; height: 45px; line-height: 29px; font-weight: lighter;}
+.slide h2 {font-size: 18px; padding: 0; margin: 0; height: 30px;}
+.slide h3 {font-size: 16px; padding: 0; margin: 0;}
+
+.slide h2 {display: none;}
+.slide .canvas h2 {display: block;}
+
+.slide .canvas {height: 530px; padding: 0px 0px 0; margin: 0 0 0px; background-color: white; background-repeat: no-repeat; background-position: top left; position: relative;}
+.slide .reference {font-size: 12px; text-align: right;}
+.slide .reference a {text-decoration: none;}
+
+.slide.f1 .canvas{background-image: url(/p6/img/bg_f1_graph.png), url(/p6/img/bg_f1.png);}
+.slide.f1.chart .canvas{background-image: url(/p6/img/bg_f1_graph.png), url(/p6/img/bg_f1_chart.png);}
+.slide.f1.chart .bigger, .slide.f1.chart .click {display: none;}
+.slide.f1.chart .bigger.chart_big {display: block;}
+.bigger {position: absolute; width: 984px; height: 530px; top: 0px; left: 0px;}
+.slide.f1.yr1984 .big84 {background-image: url(/p6/img/bg_f1_1984.png);}
+.slide.f1.yr1995 .big95 {background-image: url(/p6/img/bg_f1_1995.png);}
+.slide.f1.yr1996 .big96 {background-image: url(/p6/img/bg_f1_1996.png);}
+.slide.f1.yr2005 .big05 {background-image: url(/p6/img/bg_f1_2005.png);}
+.slide.f1.yr2006 .big06 {background-image: url(/p6/img/bg_f1_2006.png);}
+.click {position: absolute; width: 168px; height: 44px; top: 238px; z-index: 10;}
+.time84 {left: 61px;}
+.time95 {left: 231px;}
+.time96 {left: 396px;}
+.time05 {left: 564px;}
+.time06 {left: 733px;}
+.pop_reference {position: absolute; top: 482px; height: 43px; left: 15px; width: 571px; display: none;}
+.chart .pop_reference {display: block;}
+.chart_dot {position: absolute; width: 44px; height: 44px; top: 472px; z-index: 10; left: 929px;}
+.slide.f1 .link_2005 {position: absolute; width: 244px; height: 44px; top: 450px; left: 523px; display: none;}
+.slide.f1.yr2005 .link_2005 {display: block;}
+.slide.f1.chart .link_2005 {display: none;}

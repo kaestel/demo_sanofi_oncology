@@ -1,0 +1,41 @@
+body > .slide {margin-top: 75px;}
+
+.slide {background: transparent url(/p5/img/bg_canvas.png) repeat-x 0px 37px; width: 984px; float: left; padding: 0 20px 108px;}
+
+.slide h1 {font-size: 30px; padding: 0; margin: 0; height: 45px; line-height: 29px; font-weight: lighter;}
+.slide h2 {font-size: 18px; padding: 0; margin: 0; height: 30px;}
+.slide h3 {font-size: 16px; padding: 0; margin: 0;}
+
+.slide h2 {display: none;}
+.slide .canvas h2 {display: block;}
+
+.slide .canvas {height: 530px; padding: 0px 0px 0; margin: 0 0 0px; background-color: white; background-repeat: no-repeat; background-position: top left; position: relative;}
+.slide .reference {font-size: 12px; text-align: right;}
+.slide .reference a {text-decoration: none;}
+
+.slide.e1 .canvas{background-image: url(/p5/img/bg_e1.png);}
+.slide.e1 .line {position: absolute; left: 63px; height: 35px;} 
+.slide.e1 .line.line1 {width: 297px; top: 36px;}
+.slide.e1 .line.line2 {width: 247px; top: 78px;}
+.slide.e1 .line.line3 {width: 289px; top: 118px;}
+.slide.e1 .line.line4 {width: 289px; top: 158px;}
+.slide.e1 .line.line5 {width: 121px; top: 200px;}
+.slide.e1 .line.line6 {width: 133px; top: 240px;}
+.slide.e1 .line.line7 {width: 265px; top: 280px;}
+.slide.e1 .line.line8 {width: 259px; top: 320px;}
+.slide.e1 .line.show {background: transparent url(/p5/img/bg_highlight_small.png) repeat-x;}
+.slide.e2 .canvas{background-image: url(/p5/img/bg_e2.png);}
+.slide.e2.blue .canvas{background-image: url(/p5/img/bg_e2_blue.png), url(/p5/img/bg_e2.png);}
+.slide.e2.grey .canvas{background-image: url(/p5/img/bg_e2_grey.png), url(/p5/img/bg_e2.png);}
+.slide.e2.grey.blue .canvas{background-image: url(/p5/img/bg_e2_grey.png), url(/p5/img/bg_e2_blue.png), url(/p5/img/bg_e2.png);}
+
+.slide.e3 .canvas{background-image: url(/p5/img/bg_e3.png);}
+.slide.e3.blue .canvas{background-image: url(/p5/img/bg_e3_blue.png), url(/p5/img/bg_e3.png);}
+.slide.e3.grey .canvas{background-image: url(/p5/img/bg_e3_grey.png), url(/p5/img/bg_e3.png);}
+.slide.e3.grey.blue .canvas{background-image: url(/p5/img/bg_e3_grey.png), url(/p5/img/bg_e3_blue.png), url(/p5/img/bg_e3.png);}
+
+.slide.e4 .canvas{background-image: url(/p5/img/bg_e4_blue.png), url(/p5/img/bg_e4.png);}
+
+.blue_button, .grey_button {position: absolute; width: 121px; height: 45px; top: 103px; left: 834px;}
+.grey_button {top: 170px;}
+.all_button {position: absolute; top: 93px; left: 70px; height: 328px; width: 733px;}

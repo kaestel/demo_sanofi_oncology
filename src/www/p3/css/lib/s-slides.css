@@ -1,0 +1,47 @@
+body > .slide {margin-top: 75px;}
+
+.slide {background: transparent url(/p3/img/bg_canvas.png) repeat-x 0px 37px; width: 984px; float: left; padding: 0 20px 108px;}
+
+.slide h1 {font-size: 30px; padding: 0; margin: 0; height: 45px; line-height: 29px; font-weight: lighter;}
+.slide h2 {font-size: 18px; padding: 0; margin: 0; height: 30px;}
+.slide h3 {font-size: 16px; padding: 0; margin: 0;}
+
+.slide h2 {display: none;}
+.slide .canvas h2 {display: block;}
+
+.slide .canvas {height: 530px; padding: 0px 0px 0; margin: 0 0 0px; background-color: white; background-repeat: no-repeat; background-position: top left; position: relative;}
+.slide .reference {font-size: 12px; text-align: right;}
+.slide .reference a {text-decoration: none;}
+
+
+.b1 .dvideo_a {width: 984px; height: 530px; background: transparent url(/p3/img/bg_canvas_play.jpg) no-repeat 0px 0px;}
+.b1 .dvideo_a video {margin-top: 30px;}
+.b1 .video_a .dvideo_a {background: url(/p3/img/bg_canvas_stop.jpg);}
+
+.b1 .dvideo_b {margin: 50px 0 0; padding: 0 20px 100px; float: left; width: 400px; height: 300px; background: transparent url(/p3/img/bg_b1_video_b.jpg) no-repeat 20px 0px;}
+.b1 .video_b .dvideo_b {background-position: 20px -400px;}
+
+
+#presentation.docs .b1 video {-webkit-transform: translate3d(0, -600px, 0);}
+#presentation .b1 dvideo_a {display: inline; margin-top: 20px; text-align: center;}
+
+.b2 .canvas {background-image: url(/p3/img/bg_b2.png);}
+.slide.b1 .canvas {text-align: center;}
+
+.b3 .canvas {background-image: url(/p3/img/bg_b3_a.png);}
+.b3.blue_scale .canvas { background-image: url(/p3/img/bg_b3_b.png), url(/p3/img/bg_b3_a.png); }
+.b3.grey_scale .canvas { background-image: url(/p3/img/bg_b3_c.png), url(/p3/img/bg_b3_a.png); }
+.b3.blue_scale.grey_scale .canvas, .b3.grey_scale.blue_scale .canvas {background-image: url(/p3/img/bg_b3_c.png), url(/p3/img/bg_b3_b.png), url(/p3/img/bg_b3_a.png);}
+.b3 .canvas .blue_button {width: 121px; height: 42px; position: absolute; top: 135px; left: 464px;}
+.b3 .canvas .grey_button {width: 121px; height: 42px; position: absolute; top: 185px; left: 464px;}
+
+
+.b3 .canvas {background-image: url(/p3/img/bg_b3_a.png);}
+.b3.graph .canvas {background-image: url(/p3/img/bg_b3_b.png), url(/p3/img/bg_b3_a.png);}
+
+
+.b4 .canvas {background-image: url(/p3/img/bg_b4.png);}
+.b5 .canvas {background-image: url(/p3/img/bg_b5.png);}
+.b6 .canvas {background-image: url(/p3/img/bg_b6.png);}
+.b7 .canvas {background-image: url(/p3/img/bg_b7.png);}
+.b8 .canvas {background-image: url(/p3/img/bg_b8.png);}
