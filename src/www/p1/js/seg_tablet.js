@@ -1,7 +1,9 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
-u.version = 4;
+u.version = 0.4;
 
+/*u-debug.js*/
 Util.testURL = function(url) {
 	return true;
 	return url.match(/http\:\/\/mkn\.|http\:\/\/w\.|\.local/i);
@@ -85,6 +87,7 @@ Util.bug = function(target, message) {
 	}
 }
 
+/*u-dom.js*/
 Util.ge = function(id, target) {
 	var e, i, regexp, t;
 	t = target ? target : document;
@@ -296,6 +299,7 @@ Util.wrapElement = u.we = function(e, wrap) {
 	return wrap;
 }
 
+/*u-position.js*/
 Util.absoluteX = u.absX = function(e) {
 	if(e.offsetParent) {
 		return e.offsetLeft + u.absX(e.offsetParent);
@@ -351,6 +355,7 @@ Util.pageScrollY = u.scrollY = function() {
 	return window.pageYOffset;
 }
 
+/*u-events.js*/
 Util.Events = u.e = new function() {
 	this.event_pref = typeof(document.ontouchmove) == "undefined" ? "mouse" : "touch";
 	this.kill = function(event) {
@@ -806,6 +811,7 @@ Util.Events = u.e = new function() {
 	}
 }
 
+/*u-animation.js*/
 Util.Animation = u.a = new function() {
 	this.variant = function(e) {
 		if(this.implementation == undefined) {
@@ -888,6 +894,7 @@ Util.Animation = u.a = new function() {
 	}
 }
 
+/*u-timer.js*/
 Util.Timer = u.t = new function() {
 	this.actions = new Array();
 	this.objects = new Array();
@@ -916,6 +923,7 @@ Util.Timer = u.t = new function() {
 	}
 }
 
+/*u-init.js*/
 Util.Objects = u.o = new Array();
 Util.init = function() {
 	var i, e, elements, ij_value;
@@ -931,6 +939,7 @@ Util.init = function() {
 }
 window.onload = u.init;
 
+/*i-presentation.js*/
 if(typeof(submitSlideEnter) != "function") {
 	submitSlideEnter = submitCustomEvent = function() {}
 }
@@ -1011,6 +1020,7 @@ Util.Objects["presentation"] = new function() {
 	}
 }
 
+/*i-docs.js*/
 Util.Objects["docs"] = new function() {
 	this.init = function(e) {
 		e.close = e.appendChild(document.createElement("div"));
@@ -1041,6 +1051,7 @@ Util.Objects["docs"] = new function() {
 	}
 }
 
+/*i-content.js*/
 Util.Objects["sanofiA1"] = new function() {
 	this.init = function(e) {
 		e.canvas = u.ge("canvas", e)

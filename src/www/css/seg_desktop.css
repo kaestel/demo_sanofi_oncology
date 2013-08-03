@@ -1,5 +1,5 @@
 
-/*seg_desktop.css*/
+/*s-desktop.css*/
 body {min-height: 1044px; position: relative;}
 .desktop_wrapper {width: 1024px; height: 768px; position: absolute; top: 50%; left: 50%; margin-left: -636px; margin-top: -522px;
 	background: transparent url(/img/bg_ipad.png) no-repeat left top;
@@ -10,7 +10,7 @@ body {min-height: 1044px; position: relative;}
 .warning h1 {padding: 270px 50px 30px;}
 .warning p {padding: 0 50px 20px;}
 
-/*seg_tablet.css*/
+/*s-tablet.css*/
 * {font-family: "Arial"; color: #00457d; font-size: 20px;
 	-webkit-user-select: none;
 	-moz-user-select: none;

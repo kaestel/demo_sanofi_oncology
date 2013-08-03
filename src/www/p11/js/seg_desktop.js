@@ -1,7 +1,9 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
-u.version = 4;
+u.version = 0.4;
 
+/*u-debug.js*/
 Util.testURL = function(url) {
 	return true;
 	return url.match(/http\:\/\/mkn\.|http\:\/\/w\.|\.local/i);
@@ -85,6 +87,7 @@ Util.bug = function(target, message) {
 	}
 }
 
+/*u-dom.js*/
 Util.ge = function(id, target) {
 	var e, i, regexp, t;
 	t = target ? target : document;
@@ -296,6 +299,7 @@ Util.wrapElement = u.we = function(e, wrap) {
 	return wrap;
 }
 
+/*u-events.js*/
 Util.Events = u.e = new function() {
 	this.event_pref = typeof(document.ontouchmove) == "undefined" ? "mouse" : "touch";
 	this.kill = function(event) {
@@ -751,6 +755,7 @@ Util.Events = u.e = new function() {
 	}
 }
 
+/*u-position.js*/
 Util.absoluteX = u.absX = function(e) {
 	if(e.offsetParent) {
 		return e.offsetLeft + u.absX(e.offsetParent);
@@ -806,6 +811,7 @@ Util.pageScrollY = u.scrollY = function() {
 	return window.pageYOffset;
 }
 
+/*u-animation.js*/
 Util.Animation = u.a = new function() {
 	this.variant = function(e) {
 		if(this.implementation == undefined) {
@@ -888,6 +894,7 @@ Util.Animation = u.a = new function() {
 	}
 }
 
+/*u-timer.js*/
 Util.Timer = u.t = new function() {
 	this.actions = new Array();
 	this.objects = new Array();
@@ -916,6 +923,7 @@ Util.Timer = u.t = new function() {
 	}
 }
 
+/*u-init.js*/
 Util.Objects = u.o = new Array();
 Util.init = function() {
 	var i, e, elements, ij_value;
@@ -931,6 +939,7 @@ Util.init = function() {
 }
 window.onload = u.init;
 
+/*i-presentation.js*/
 if(typeof(submitSlideEnter) != "function") {
 	submitSlideEnter = submitCustomEvent = function() {}
 }
@@ -1011,6 +1020,7 @@ Util.Objects["presentation"] = new function() {
 	}
 }
 
+/*i-content.js*/
 Util.Objects["sanofiK1"] = new function() {
 	this.init = function(e) {
 		var i, row;
@@ -1074,6 +1084,7 @@ Util.Objects["sanofiK1"] = new function() {
 		}
 	}
 }
+/*i-desktop.js*/
 Util.Objects["validdevice"] = new function() {
 	this.init = function(e) {
 		var wrapper = document.createElement("div");
@@ -1088,7 +1099,7 @@ Util.Objects["validdevice"] = new function() {
 		var warning_displayed = u.getCookie("warning");
 		if(!warning_displayed) {
 			var warning = u.ae(e, "div", "warning");
-			warning.innerHTML = "<h1>Warning</h1><p>This site is designed for touch interaction - using a mouse might have unitented side effects.</p><p>Click to continue.</p>"
+			warning.innerHTML = "<h1>Warning</h1><p>This site is designed for touch interaction - using a pointer such as a mouse or trackpad might have unitented side effects. Move the mouse slowly when dragging to minimize errors.</p><p>Click to continue.</p>"
 			u.e.click(warning);
 			warning.clicked = function(event) {
 				this.parentNode.removeChild(this);
@@ -1098,6 +1109,7 @@ Util.Objects["validdevice"] = new function() {
 	}
 }
 
+/*u-cookie.js*/
 Util.saveCookie = function(name, value) {
 	document.cookie = name + "=" + value +";"
 }

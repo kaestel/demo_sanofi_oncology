@@ -1,7 +1,9 @@
 
+/*u.js*/
 var u, Util = u = new function() {}
-u.version = 4;
+u.version = 0.4;
 
+/*u-debug.js*/
 Util.testURL = function(url) {
 	return true;
 	return url.match(/http\:\/\/mkn\.|http\:\/\/w\.|\.local/i);
@@ -85,6 +87,7 @@ Util.bug = function(target, message) {
 	}
 }
 
+/*u-dom.js*/
 Util.ge = function(id, target) {
 	var e, i, regexp, t;
 	t = target ? target : document;
@@ -296,6 +299,7 @@ Util.wrapElement = u.we = function(e, wrap) {
 	return wrap;
 }
 
+/*u-events.js*/
 Util.Events = u.e = new function() {
 	this.event_pref = typeof(document.ontouchmove) == "undefined" ? "mouse" : "touch";
 	this.kill = function(event) {
@@ -751,6 +755,7 @@ Util.Events = u.e = new function() {
 	}
 }
 
+/*u-timer.js*/
 Util.Timer = u.t = new function() {
 	this.actions = new Array();
 	this.objects = new Array();
@@ -779,6 +784,7 @@ Util.Timer = u.t = new function() {
 	}
 }
 
+/*u-init.js*/
 Util.Objects = u.o = new Array();
 Util.init = function() {
 	var i, e, elements, ij_value;
@@ -794,6 +800,7 @@ Util.init = function() {
 }
 window.onload = u.init;
 
+/*i-content.js*/
 Util.Objects["pre"] = new function() {
 	this.init = function(e) {
 		u.addClass(document.body, "show");
@@ -825,6 +832,7 @@ Util.Objects["splash"] = new function() {
 		u.e.click(e);
 	}
 }
+/*i-desktop.js*/
 Util.Objects["validdevice"] = new function() {
 	this.init = function(e) {
 		var wrapper = document.createElement("div");
@@ -839,7 +847,7 @@ Util.Objects["validdevice"] = new function() {
 		var warning_displayed = u.getCookie("warning");
 		if(!warning_displayed) {
 			var warning = u.ae(e, "div", "warning");
-			warning.innerHTML = "<h1>Warning</h1><p>This site is designed for touch interaction - using a mouse might have unitented side effects.</p><p>Click to continue.</p>"
+			warning.innerHTML = "<h1>Warning</h1><p>This site is designed for touch interaction - using a pointer such as a mouse or trackpad might have unitented side effects. Move the mouse slowly when dragging to minimize errors.</p><p>Click to continue.</p>"
 			u.e.click(warning);
 			warning.clicked = function(event) {
 				this.parentNode.removeChild(this);
@@ -849,6 +857,7 @@ Util.Objects["validdevice"] = new function() {
 	}
 }
 
+/*u-cookie.js*/
 Util.saveCookie = function(name, value) {
 	document.cookie = name + "=" + value +";"
 }
