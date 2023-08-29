@@ -1,9 +1,0 @@
-@font-face {
-	font-family: "Sanofi";
-	src: url('/css/fonts/sanofi.svg#helv') format("svg");
-}
-@font-face {
-	font-family: "Sanofi";
-	font-weight: lighter;
-	src: url('/css/fonts/sanofilight.svg#helv') format("svg");
-}
